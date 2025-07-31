@@ -21,10 +21,10 @@ public class Topico {
     private Long id;
     private String nombre;
     private String mensaje;
-    private LocalDateTime  fechaDeCreacion;
+    private LocalDateTime  fechaDeCreacion =  LocalDateTime.now();
 
     @Enumerated(EnumType.STRING)
-    private StatusTopico status;
+    private StatusTopico status = StatusTopico.NO_RESPONDIDO;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "autor_id")
