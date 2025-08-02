@@ -8,7 +8,7 @@ public record RespuestaTopicoDTO(
         Long id,
         String titulo,
         String mensaje,
-        LocalDateTime fechaCreacion,
+        LocalDateTime fechaDeCreacion,
         StatusTopico status,
         String autor,
         String curso
